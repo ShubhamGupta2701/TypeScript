@@ -81,3 +81,12 @@
       Data_Boundation_Name3,
   }
   ```
+- We can also define what should log during run time by default its going according to index
+  ```
+  enum Direction{
+      UP = "UP",
+      DOWN = "DOWN",
+      LEFT = "LEFT",
+      RIGHT = "RIGHT",
+  }
+  ```
