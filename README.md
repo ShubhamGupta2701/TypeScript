@@ -14,3 +14,7 @@
 - null `null or empty`
 - undefined `data is not defined`
 - any `can be anything`
+
+## Advance Datatypes
+
+- interface `when we have an object then we give this type to it`
