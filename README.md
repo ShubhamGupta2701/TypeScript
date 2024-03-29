@@ -34,12 +34,37 @@
         age:number
     }
 ```
-- type let us help to create multi type variable
-```
-    type multiTypeVar1 = string | number;
-    function printID(id:multiTypevar1){
-        console.log(`ID is : ${id}`);
-    }
-    printID(01);
-    printID('yet28wsbao9e0e2');
-```
+- type Provide some special feature to variable :
+    - Union
+        ```
+            type multiTypeVar1 = string | number;
+            function printID(id:multiTypevar1){
+                console.log(`ID is : ${id}`);
+            }
+            printID(01);
+            printID('yet28wsbao9e0e2');
+        ```
+    - Intersection 
+        ```
+            type Frontend ={
+                react:string,
+                tailwind:string
+            }
+            type Backend = {
+                nodejs:string,
+                mongodb = string,
+            }
+            type DevOops = {
+                docker = string,
+                awsServer =string
+            }
+            type FullStack = Frontend & Backend & DevOops; 
+            const fullstack:FullStack={
+                react:"For frontend use ReactJS",
+                tailwind:"use for stylesheet",
+                nodejs:"use for backend",
+                mongodb:USe for NoSQL db,
+                docker:"Use for Cloud computing",
+                awsServer:"AWS Machine for serverless server"
+            } 
+        ```
