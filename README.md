@@ -26,10 +26,10 @@
         age:number
     }
 ```
-- types 
+- type 
 `we can't use implement on types but it let us to do many other things`
 ```
-    types User = {
+    type User = {
         name:string,
         age:number
     }
