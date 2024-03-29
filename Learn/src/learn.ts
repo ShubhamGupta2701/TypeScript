@@ -128,11 +128,17 @@ function findMax(n:number[]){
 
 // ENUM - it make code more human understandable and readable and help user to perform some set of functions
 
+// enum Direction{
+//     UP,
+//     DOWN,
+//     RIGHT,
+//     LEFT
+// }
 enum Direction{
-    UP,
-    DOWN,
-    RIGHT,
-    LEFT
+    UP = "UP",
+    DOWN = "DOWN",
+    LEFT = "LEFT",
+    RIGHT = "RIGHT",
 }
 
 function press(val : Direction){
@@ -154,4 +160,4 @@ function press(val : Direction){
     }
 }
 
-press(Direction.UP);
+// press(Direction.UP);
