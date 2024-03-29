@@ -34,4 +34,12 @@
         age:number
     }
 ```
-
+- type let us help to create multi type variable
+```
+    type multiTypeVar1 = string | number;
+    function printID(id:multiTypevar1){
+        console.log(`ID is : ${id}`);
+    }
+    printID(01);
+    printID('yet28wsbao9e0e2');
+```
