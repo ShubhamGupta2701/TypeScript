@@ -17,4 +17,21 @@
 
 ## Advance Datatypes
 
-- interface `when we have an object then we give this type to it`
+- interface 
+`when we have an object then we give this type to it`
+`we can implement interfaces to classes using implement keyword`
+```
+    interface User{
+        name:string,
+        age:number
+    }
+```
+- types 
+`we can't use implement on types but it let us to do many other things`
+```
+    types User = {
+        name:string,
+        age:number
+    }
+```
+
