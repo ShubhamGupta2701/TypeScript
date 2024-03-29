@@ -68,3 +68,16 @@
                 awsServer:"AWS Machine for serverless server"
             } 
         ```
+## enum
+
+- ENUM is used to make code more human understandable as well as readable
+- It provides more input controll to developer
+- It defines what data has to enter
+- Syntax is :
+  ```
+  enum enum_name{
+      Data_Boundation_Name1,
+      Data_Boundation_Name2,
+      Data_Boundation_Name3,
+  }
+  ```
