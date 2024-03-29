@@ -1,32 +1,45 @@
 import { useState } from "react";
 
 interface todo {
+  id:number;
   title:String;
   desc : String;
-  isChecked ?: boolean;
+  isChecked : boolean;
 }
 
 function App() {
-  
   return (
-    <>
-      <Todo title="Todo 1" desc="this is first todo" isChecked={false}></Todo>
-    </>
+    <div>
+      <Todo id={1} title="Todo 1" desc="this is first todo" isChecked={false}></Todo>
+    </div>
   )
 }
-function Todo(props:todo):any{
-  const [check,setCheck] = useState(props.isChecked);
+function Todo(props:todo){
+  let [isChecked,setIsChecked] = useState(props.isChecked);
   function updateCheck(){
-    setCheck(true);
-    console.log(props.isChecked);
+    setIsChecked(!isChecked)
   }
   return (
-<div>
-    <h1>{props.title}</h1>
-    <h2>{props.desc}</h2>
-    <h3>Status : Not Completed</h3>
+  <div>
+    <div>
+      <h1>{props.title}</h1>
+    </div>
+    <div>
+      <h2>{props.desc}</h2>
+    </div>
+    <div>
+      <ChangeStatus isChecked={isChecked}/>
+    </div>
     <button onClick={updateCheck}>click to comlpete</button>
   </div>
+  )
+}
+
+function ChangeStatus(props:{isChecked:boolean}){
+  return (
+    <div>
+      <h3>Status : {props.isChecked ? "Comlpeted" : "Not Comlpeted"}</h3>
+    </div>
   )
 }
 
