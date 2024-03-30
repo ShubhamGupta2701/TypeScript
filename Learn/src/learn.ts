@@ -161,3 +161,12 @@ function press(val : Direction){
 }
 
 // press(Direction.UP);
+
+//Generics used for type safety during run time
+function printString<T>(val : T[]){
+    return val[0];
+}
+
+const v1 = printString(["Shubham","gupta","riya"]);
+
+// console.log(v1);
