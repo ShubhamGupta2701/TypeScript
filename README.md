@@ -114,3 +114,21 @@ function getUserName<User>(data:User){
 
 const getName = getUserName({name:"Shubham",age=23});
 ```
+
+## Import & Exports 
+
+- In TypeScript we use latest approach to import or export anything
+- like:
+      - To import any module :
+      `import express from 'express'` as well as we have to imstall it for typescript as well .
+      - To import any function :
+      `import {function_name} from 'file_location'` or for defalut exports `import a from 'file_location'`
+      - To export any function :
+      `export function fun_name(){//code}`
+      - To export any varibale or anonymus function :
+      `export const a = 1` or `export const f = ()=>{//code}` 
+      - To perform default export :
+      ```
+      const a = 1;
+      export defalut a;
+      ```
