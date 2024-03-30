@@ -90,3 +90,27 @@
       RIGHT = "RIGHT",
   }
   ```
+
+## Generics
+
+- Generics enable us to write code with any type of datatype and as well as provide us Compile time tyoe safety
+```
+function printString<T>(val : T[]){
+    return val[0];
+}
+
+const v1 = printString("Shubham");
+console.log(v1);
+``` 
+    OR
+```
+interface User{
+    name:string,
+    age:number
+}
+function getUserName<User>(data:User){
+    return data.name;
+}
+
+const getName = getUserName({name:"Shubham",age=23});
+```
